@@ -28,8 +28,8 @@ export default function Header() {
           style={toggleStyle}
         >
           <div className="nav-links">
-            <a href="#features">Features</a>
             <a href="#resources">Shorten</a>
+            <a href="#features">Features</a>
             <a href="#resources">Resources</a>
           </div>
           <div className="nav-buttons">
