@@ -24,7 +24,7 @@ export default function Shorten() {
         <span className="alert" />
       </div>
       <button type="submit" className="btn btn-lg btn-plus-icon">
-        Shorten It!
+        🔗 Shorten It!
       </button>
     </form>
   );
