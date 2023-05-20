@@ -19,7 +19,7 @@ export default function Header() {
         <div className="logo">
           <a href="#">
             <h2 className="logoHead">
-              <b>Shorten.ly🚀</b>
+              <b>Short.is.gd🚀</b>
             </h2>
           </a>
         </div>
