@@ -51,6 +51,29 @@ img {
   transition: 0.3s;
 }
 
+.inputs {
+  display: flex;
+  gap: 4px;
+  /* flex-direction: column; */
+}
+
+.qrcode {
+  position: relative;
+  bottom: 3rem;
+}
+
+.btn-custom {
+  padding: 1rem;
+  background-color: #f24a4a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
 .btn.btn-sm {
   padding: 7px 21px;
 }
@@ -119,6 +142,17 @@ img {
   .section-header p {
     width: 70%;
   }
+  .authDiv {
+    display: none;
+  }
+}
+
+.fa-trash {
+  color: #f24a4a;
+}
+
+.fa-copy {
+  color: #000000;
 }
 
 @media (max-width: 500px) {
