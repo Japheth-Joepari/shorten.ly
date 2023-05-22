@@ -17,6 +17,7 @@ This is a simple URL Shortener application built using TypeScript and React. It 
 - TypeScript
 - is.gd PHP API
 - axios
+- Firebase for authentication
 
 ## Getting Started
 
@@ -25,13 +26,13 @@ To run the application locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone <repository_url>
+   git clone https://github.com/Japheth-Joepari/shorten.ly.git
    ```
 
 2. Install the dependencies:
 
    ```
-   cd url-shortener-app
+   cd shorten.ly
    npm install
    ```
 
@@ -42,13 +43,13 @@ To run the application locally, follow these steps:
 4. Start the development server:
 
    ```
-   npm start
+   npm run start
    ```
 
 5. Open the application in your browser:
 
    ```
-   http://localhost:3000
+   http://localhost:5173
    ```
 
 ## Usage
