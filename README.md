@@ -43,7 +43,7 @@ To run the application locally, follow these steps:
 4. Start the development server:
 
    ```
-   npm run start
+   npm run dev
    ```
 
 5. Open the application in your browser:
