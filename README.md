@@ -38,7 +38,7 @@ To run the application locally, follow these steps:
 
 3. Configure the is.gd API endpoint in the code:
 
-   Open the `ShortenProvider.tsx` file and locate the `shorten` function. Replace the API endpoint with the appropriate is.gd PHP API endpoint.
+   Open the `context/ShortenContext.tsx` file and locate the `shorten` function. Replace the API endpoint with the appropriate is.gd PHP API endpoint.
 
 4. Start the development server:
 
