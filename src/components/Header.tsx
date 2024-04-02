@@ -43,7 +43,7 @@ export default function Header() {
             <a href="#resources">Resources</a> */}
           </div>
           {!loggedIn ? (
-            <div className="nav-buttons">
+            <div className="nav-buttons mtr">
               <Link to="/auth" className="log-in ">
                 Login
               </Link>
