@@ -72,7 +72,7 @@ export default function Header() {
           )}
         </nav>
         {!loggedIn ? (
-          <div className="burger-menu" onClick={toggleNav}>
+          <div className="burger-menu bars" onClick={toggleNav}>
             <i className="fa fa-bars icon" aria-hidden="true"></i>
           </div>
         ) : (
