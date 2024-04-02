@@ -43,7 +43,7 @@ export default function Header() {
             <a href="#resources">Resources</a> */}
           </div>
           {!loggedIn ? (
-            <div className="nav-buttons mtr">
+            <div className="nav-buttons">
               <Link to="/auth" className="log-in ">
                 Login
               </Link>
@@ -87,7 +87,7 @@ export default function Header() {
             {isDropdownOpen && (
               <div>
                 {/* Dropdown Content */}
-                <a href="#" onClick={userSignOut} className="logoutLink">
+                <a href="#" onClick={userSignOut} className="logoutLink logout-l2">
                   Logout
                 </a>
               </div>
