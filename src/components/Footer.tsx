@@ -16,7 +16,7 @@ export default function Footer() {
         >
           Japheth Joepari
         </a>
-        . Coded by <a className="outer-link" href="https://github.com/japheth-joepari" className="outer-link"> {"<JoepariCodes /> "}</a>.
+        . Coded by <a href="https://github.com/japheth-joepari" className="outer-link"> {"<JoepariCodes /> "}</a>.
       </div>
     </footer>
   );

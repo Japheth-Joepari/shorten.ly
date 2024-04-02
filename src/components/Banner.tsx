@@ -29,9 +29,9 @@ export default function Banner() {
               shorten now ⚡
             </Link>
 
-            <Link to="/auth" className="btn btn-lg whit">
+            <a href="https://github.com/Japheth-Joepari/shorten.ly" className="btn btn-lg whit">
               code  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="" />
-            </Link>
+            </a>
           </div>
         )}
       </div>
