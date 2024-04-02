@@ -8,7 +8,7 @@ export default function Banner() {
   return (
     <section className="landing">
       <div className="landing-text">
-        <h1> OpenSource Url Shortener 🚀</h1>
+        <h1> OpenSource 🚀 Url  Shortener </h1>
         <p>
           Discover the power of our open-source URL shortener
           shorten URLs with our open-source solution.
