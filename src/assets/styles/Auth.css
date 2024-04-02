@@ -66,7 +66,10 @@
   display: flex;
   flex-direction: column;
   height: 1rem;
+  position: relative;
+  bottom: 2rem;
 }
+
 .imgStyle {
   cursor: pointer;
   height: 2.7rem;
@@ -75,7 +78,7 @@
 
 .logoutLink {
   position: relative;
-  bottom: 2rem;
+  bottom: 1.3rem;
 }
 
 .img {
@@ -96,6 +99,7 @@
 }
 
 @media (max-width: 768px) {
+
   .fblogin,
   .twlogin,
   .gplogin {
@@ -106,12 +110,14 @@
 }
 
 @media (max-width: 576px) {
+
   .fblogin,
   .twlogin,
   .gplogin {
     width: 80%;
   }
 }
+
 .authDiv {
   margin-bottom: 2.1rem;
 }

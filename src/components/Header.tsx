@@ -19,8 +19,8 @@ export default function Header() {
 
   const toggleStyle = toggled
     ? {
-        height: "363px",
-      }
+      height: "10rem",
+    }
     : {};
 
   return (
@@ -29,7 +29,7 @@ export default function Header() {
         <div className="logo">
           <a href="#">
             <h2 className="logoHead">
-              <b>Short.is.gd🚀</b>
+              <b>Short.is.gd🔗</b>
             </h2>
           </a>
         </div>
@@ -38,16 +38,16 @@ export default function Header() {
           style={toggleStyle}
         >
           <div className="nav-links">
-            <a href="#resources">Shorten</a>
-            <a href="#features">Features</a>
-            <a href="#resources">Resources</a>
+            {/* <a href="#resources">start</a> */}
+            {/* <a href="#features">Features</a>
+            <a href="#resources">Resources</a> */}
           </div>
           {!loggedIn ? (
-            <div className="nav-buttons">
-              <Link to="/auth" className="log-in">
+            <div className="nav-buttons mtr">
+              <Link to="/auth" className="log-in ">
                 Login
               </Link>
-              <Link to="/auth" className="sign-up btn btn-sm">
+              <Link to="/auth" className="sign-up btn btn-sm ">
                 Sign Up
               </Link>
             </div>
@@ -61,9 +61,9 @@ export default function Header() {
               />
 
               {isDropdownOpen && (
-                <div>
+                <div className="">
                   {/* Dropdown Content */}
-                  <a href="#" onClick={userSignOut} className="logoutLink">
+                  <a href="#" onClick={userSignOut} className="logoutLink logout-l">
                     Logout
                   </a>
                 </div>

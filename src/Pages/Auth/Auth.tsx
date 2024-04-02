@@ -41,14 +41,15 @@ export default function Auth() {
           <i className="fa-brands fa-google-plus" />
           <span>continue with Google</span>
         </a>
-        <a href="#" className="fblogin social" onClick={facebookSignIn}>
+        <Link to={'/'}>Back to home</Link>
+        {/* <a href="#" className="fblogin social" onClick={facebookSignIn}>
           <i className="fa-brands fa-facebook" />
           <span>continue with Facebook</span>
         </a>
         <a href="#" className="twlogin social" onClick={twitterSignIn}>
           <i className="fa-brands fa-twitter" />
           <span>continue with Twitter</span>
-        </a>
+        </a> */}
       </div>
     </div>
   );
