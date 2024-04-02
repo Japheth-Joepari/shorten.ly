@@ -58,7 +58,7 @@ export default function Shorten() {
           <input
             type="text"
             className="url-input"
-            placeholder="+ custom link here .."
+            placeholder="+ custom url here .."
             value={customUrl}
             onChange={(e) => setCustomUrl(e.target.value)}
             autoComplete="off"
@@ -77,7 +77,7 @@ export default function Shorten() {
           disabled={loading}
           onClick={() => customInput()}
         >
-          {!custom ? "+ Customize✨ link!" : " - Hide Customize✨ link"}
+          {!custom ? "+ Custom Url!" : " - Hide Custom url"}
         </button>
       </form>
     </>

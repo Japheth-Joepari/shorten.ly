@@ -1,4 +1,4 @@
-import React, { useState, createContext, ReactNode } from "react";
+import React, { useState, createContext, ReactNode, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 
@@ -16,21 +16,23 @@ interface ShortenContextType {
 }
 
 export const ShortenContext = createContext<ShortenContextType>({
-  setOriginalUrl: () => {},
-  setCustomUrl: () => {},
-  setShortenUrl: () => {},
-  shorten: () => {},
+  setOriginalUrl: () => { },
+  setCustomUrl: () => { },
+  setShortenUrl: () => { },
+  shorten: () => { },
   shortenUrl: [],
   customUrl: "",
   originalUrl: "",
   loading: false,
-  deleteUrl: () => {},
-  copyToClipboard: () => {},
+  deleteUrl: () => { },
+  copyToClipboard: () => { },
 });
 
 interface Props {
   children: ReactNode;
 }
+
+
 
 export const ShortenProvider = ({ children }: Props) => {
   const [originalUrl, setOriginalUrl] = useState("");
@@ -38,21 +40,24 @@ export const ShortenProvider = ({ children }: Props) => {
   const [loading, setLoading] = useState(false);
   const [customUrl, setCustomUrl] = useState("");
 
+  useEffect(() => {
+    setLoading(false)
+  }, [])
   // create Url
   const shorten = async () => {
-    setLoading(true);
     if (!originalUrl) {
       return;
     }
     try {
+      setLoading(true);
       toast.loading("Generating Url, please wait...");
       const url = customUrl
         ? `https://is.gd/create.php?format=json&url=${encodeURIComponent(
-            originalUrl
-          )}&shorturl=${encodeURIComponent(customUrl)}`
+          originalUrl
+        )}&shorturl=${encodeURIComponent(customUrl)}`
         : `https://is.gd/create.php?format=json&url=${encodeURIComponent(
-            originalUrl
-          )}`;
+          originalUrl
+        )}`;
       const response = await axios.get(url);
       const { shorturl } = response.data;
       setLoading(false);
@@ -60,13 +65,17 @@ export const ShortenProvider = ({ children }: Props) => {
       setOriginalUrl("");
       setCustomUrl("");
       if (!response.data.errormessage) {
+        setLoading(false)
         if (shortenUrl.includes(shorturl)) {
+          setLoading(false)
           toast.error("Short URL already exists");
         } else {
+          setLoading(false)
           setShortenUrl([...shortenUrl, shorturl]);
           toast.success("Generated successfully");
         }
       } else {
+        setLoading(false)
         toast.warn(response.data.errormessage);
       }
     } catch (error) {
@@ -80,6 +89,7 @@ export const ShortenProvider = ({ children }: Props) => {
 
   // deleteUrl
   const deleteUrl = (url: string) => {
+
     const updatedShortenUrl = shortenUrl.filter(
       (shortenedUrl) => shortenedUrl !== url
     );
