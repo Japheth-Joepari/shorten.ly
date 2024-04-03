@@ -1,4 +1,4 @@
-![shorten](https://github.com/Japheth-Joepari/shorten.ly/assets/51114866/7ee0da65-d832-4b55-8ae7-a4ce1923d781)
+![Screenshot from 2024-04-03 09-30-51](https://github.com/Japheth-Joepari/shorten.ly/assets/51114866/7d5602b0-2469-470a-a3de-92fc20364f9a)
 # shorten.ly
 # URL Shortener App
 
@@ -9,13 +9,14 @@ This is a simple URL Shortener application built using TypeScript and React. It 
 - Shorten long URLs into compact links.
 - Option to provide custom short URLs.
 - Copy shortened links to the clipboard.
+- Covert shortened urls to qr code
 - Delete previously generated shortened links.
 
 ## Technologies Used
 
 - React
 - TypeScript
-- is.gd PHP API
+- PHP
 - axios
 - Firebase for authentication
 
